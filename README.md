@@ -4,78 +4,48 @@ Spam Email project for Python 3.10.8
 
 ## Applications
 
-* [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-* [Visual Studio Code](https://code.visualstudio.com/download)
-* [Jupyter Iteractive Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+* [Miniconda](https://docs.conda.io/en/latest/miniconda.html "Miniconda download")
+* [Visual Studio Code](https://code.visualstudio.com/download "Visual Studio Code download")
+* [Jupyter Iteractive Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter "Jupyter Extension for Visual Studio Code installation page")
 * [ipykernel](https://pypi.org/project/ipykernel/ "ipykernel for Jupyter")
-* [CUDA Toolkit 11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10 "CUDA Toolkit 11.7 for Windows")
-* `conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia`
 
 ## Required Libraries
 
 * [pandas](https://pandas.pydata.org/)
-* [NumPy](https://numpy.org/)
-* [PyTorch](https://pytorch.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [seaborn](https://seaborn.pydata.org/)
+* [Natural Language Toolkit](https://www.nltk.org/)
+* [scikit-learn](https://scikit-learn.org/stable/)
 
-## Project Plan
+## Project Framework
 
-A framework to learn and finish the Spam Email machine learning project.
+Code based off Syam Kakarla's [Spam Email Classifier](https://www.kaggle.com/code/syamkakarla/spam-mail-classifier "Spam Email Classifier by Syam Kakarla").
 
-### Theory Background
+The goal of the project is to mark emails as "spam" or "not spam" based off the subject text.
 
-Machine learning includes linear regression algorithms. This is also known as the line of best fit.
-
-The general formula for a linear model is: outputs = biases + weights(inputs)
-
-#### Supervised Learning
+### Theory
 
 To predict the label of the instances based on learned relationship.
 
-Examples:
+**Initial Population Classification**
 
-* Spam Email Detection
+![Population Report](population_report.png)
 
-    * Mark email as "spam" or "not spam"
+The actual parameters for "spam" and "not spam" emails in the provided `spam_ham_dataset.csv`.
 
-    * [Spam Mail Dataset](https://www.kaggle.com/datasets/venky73/spam-mails-dataset)
+There are 1499 "spam" emails and 3672 "not spam" emails for a total of 5171 emails.
 
-* Sentiment Analysis
+**Model Error Report**
 
-    * Review Twitter posts -> classify: positive, negative, neutral
+Reports the accuracy of the model based off the training data.
 
-    * [Sentiment Analyser Blog](https://towardsdatascience.com/5-ways-to-develop-a-sentiment-analyser-in-machine-learning-e8352872118 "Libraries of sentiment analyser")
-    
-    * [Hugging Face Blog](https://huggingface.co/blog/sentiment-analysis-python "Getting started with sentiment analysis using Python")
+![Error Report](error_report.png)
 
-#### Unsupervised Learning
+**Model Evaluation Report**
 
-To discover the underlying structure in the data.
+Given the input, "You won 1000$ prize money in lottery. Click here to avail", the model evaluated the probability of this subject text being a spam email.
 
-Examples:
-
-* Book classification
-
-* Customer segmentation
-
-#### Reinforcement Learning
-
-To make decisions by performing actions in an environment to maximize rewards.
-
-Examples:
-
-* Minesweeper Bot
-
-* Racing car on a race track
-
-#### Neural Network Learning (Deep Learning)
-
-To adapt to changing input. Can be supervised, semi-supervised, or unsupervised.
-
-Examples:
-
-* Image recognition
-
-* Text generation
+![Evaluation Report](evaluation_report.png)
 
 ## Credits
 
