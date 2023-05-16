@@ -29,11 +29,11 @@ To predict the label of the instances based on learned relationship.
 
 **Initial Population Classification**
 
-![Population Report](population_report.png)
-
 The actual parameters for "spam" and "not spam" emails in the provided `spam_ham_dataset.csv`.
 
 There are 1499 "spam" emails and 3672 "not spam" emails for a total of 5171 emails.
+
+![Population Report](population_report.png)
 
 **Model Error Report**
 
